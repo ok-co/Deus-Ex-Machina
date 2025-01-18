@@ -11,6 +11,13 @@ bevy_rapier2d = "*"
 [profile.dev]
 opt-level = 1
 
+[profile.release]
+opt-level = 3
+#lto = true
+#codegen-units = 1
+#incremental = false
+#debug = false
+
 # Enable a large amount of optimization in the dev profile for dependencies.
 [profile.dev.package."*"]
 opt-level = 3
